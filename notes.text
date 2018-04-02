@@ -1,0 +1,51 @@
+---------------------- huomioita npm ja node_modules kohtaan ------------------------
+
+
+* kannattaa tehdä gitignore-file ja laittaa sinne node_modules, ettei se ota turhaan sinne mukaan kaikkea turhia node modules tiedostoja sieltä. tämä tekee sapplikaatiostas vain turhan raskaan ja kannattee sisällyttää sinne vain välttämättömät ja tarpeelliset tiedostot. Tämä on täkeä muistaa!!!!!
+
+* --save tekee sen dependensyksi ja tämä hyvä huomatsa kun lisää npm install jonkin javascript packagen
+
+* kun lisäät omat tarvittavat tiedostot githubiin esimerkiksi, niin sinne ei todeöllakaan kannate lisätä node_moduleja. Kun otat sieltä esimerkiksi jonkin toisen tekemän tiedostot, niin riittää kun laitat komennon -npm install ja tämä tekee sen, että se osaa hakea tarvittavat dependekset, joita tarvitaan applikaatioin pyörittämiseen
+
+* dependekset on tärkeä tarkistaa, että ne löytyvät package-jason tiedostosta
+
+* npm install gulp gulp-sass --save-dev ------ tämä tekee sen, että gulp ja gulp-sass menevät vain devausympäristöön, eikä production vaiheeseen
+
+* npm install --production versus npm install ---------- muista mikä näiden ero 
+
+* npm (uninstall/remove/rm) gulp-sass --save-dev --------------- tekee sen, että sen poistaa sen devaus riippuvuukisista sekä poistaa tiedostot myöskin node_moduleista
+
+* npm install lodash@4.17.3 --save ------------ tämä installoi tietyn version jostakin js-paketista
+
+* npm update lodash ---------- tämä updeittaa tietyn js-paketin uusimpaan versioon
+
+* npm (set/get) init-author-name "Henri" ---------- täämä lisää tai poistaa esimerkkinä authorin tuosta initistä tai package jasonista
+
+* npm  tilde ^ tai ei mitään ----- näillä on eroa siihen minkä version npm install hakee 
+
+* npm root -g ----- tämän komennon avulla näet mitä on asennettuna globaalisti sinun koneellesi root-kansion
+
+* npm install nodemon -g ----- katsoo sinun jokaista liikettäsi ja päivittää ne heti kun tallennat tiedostosi. tämä kannattee ladata globaaliksi
+
+* npm install live-server -g ------ tämän avulla voit katsoa selaimella lokaaklisti kasikki muutokset mitö teet, niin sieltä näkyy selaimessa ne. erittäin näppärä juttu !!!!
+
+* npm rm nodemon -g ----- tämä komento poistaa globaalisti asennetun packagen
+
+* npm list ---- listaa kaikki dependekset mitö sinulla on käytettynä projektissa
+
+* npm list --depth 0 ----- tämä näyttää hierarkiatasossa vain tärkeimmät tiedostot
+
+* "start": "node index.html"  ----- tämä aloittaa sitten applikaation sanomalla komennon npm start
+
+
+----------------- json / REST API muistiinpanoja --------------------
+
+* jsonlint ----- tarkistaa että on validi json file
+
+* http methods: get, post, put, delete
+
+* JSON.parse komento antaa viestin selaimelle, että katso tieto objektien ja jsonbnin muyodossa
+
+* mitä on javascriptissä ---- string(tekstiä), number(noh numeroita), object, array, any, boolean, for, each, 
+
+* 
